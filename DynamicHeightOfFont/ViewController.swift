@@ -9,9 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var btnName: UIButton!
+    @IBOutlet weak var txtName: UITextField!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.lblName.text = "Jack Sparrow"
+        self.txtName.text = "Jack Sparrow"
+        self.btnName.setTitle("Jack Sparrow", forState: .Normal)
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
